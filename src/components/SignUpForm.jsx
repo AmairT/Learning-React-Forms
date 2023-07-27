@@ -25,7 +25,7 @@ export default function SignUpForm({setToken}) {
 
     return (
         <>
-        <h2>Sign Up!</h2>
+        <h2 style={{color:'red'}}>Sign Up!</h2>
             {error && <p>{error}</p>}
             <form onSubmit={handleSubmit}>
                 <label>
@@ -35,7 +35,7 @@ export default function SignUpForm({setToken}) {
 
                 <label>
                     Password: {' '}
-                    <input type='password' value={password} onChange={(e) => setPassword(e.target.value)} />
+                    <input type='password' minLength={3} maxLength={8} value={password} onChange={(e) => setPassword(e.target.value)} />
                 </label>
 
                 <button>Submit</button>
