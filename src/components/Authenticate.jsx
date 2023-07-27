@@ -1,6 +1,6 @@
 import { useState} from "react";
 
-export default function Authenticate ({token}) {
+export default function Authenticate({token}) {
     const [successMessage, setSuccessMessage] = useState(null);
     const [error, setError] = useState(null);
 
